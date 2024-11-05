@@ -363,7 +363,7 @@ function addInputForProductToFolder(productId, button) {
                     data: $(this).serialize(),
                 }).done(function (data, textStatus, xhr) {
                     if(data !== '') {
-                        alert("중복된 폴더입니다.");
+                        alert("회원님의 관심상품이 아니거나, 회원님의 폴더가 아닙니다.");
                         return;
                     }
                     alert('성공적으로 등록되었습니다.');
